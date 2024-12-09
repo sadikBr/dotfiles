@@ -1,0 +1,24 @@
+[env]
+TERM = "xterm-256color"
+
+[general]
+working_directory = "//wsl$/Ubuntu-24.04/home/bsadik/dev"
+import = [
+  "C:/Users/bsadik/dev/dotfiles/alacritty/themes/themes/coolnight.toml"
+]
+
+[window]
+padding.x = 10
+padding.y = 10
+
+opacity = 0.9
+
+decorations = "None"
+startup_mode = "Maximized"
+
+[font]
+normal.family = "Hack Nerd Font"
+size = 13
+
+[terminal]
+shell = "wsl"
