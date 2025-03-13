@@ -1,0 +1,57 @@
+paru
+
+Blender
+Godot
+Gapless
+Discord
+Steam (enable 32bit library -> search how to do it)
+Krita
+Lutris
+Image Viewer
+Meld
+Remote Viewer
+Parabolic
+Thunderbird
+Zen Browser
+Zed
+qBittorrent
+Upscaler
+osu!lazer
+Ghostty
+Mission Center
+Timeshift
+Virtual Machine
+KeePassXC
+Qalculate!
+Neovim
+nodejs
+deno
+zsh
+nerd-fonts
+
+## Oh-My_Zsh
+  ### zsh-syntax-highlighting
+    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  ### zsh-autosuggestions
+    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+
+## Ghostty config
+theme=tokyonight_moon
+font-family=JetBrainsMono Nerd Font
+background-opacity=0.9
+font-size=14
+window-padding-x=4
+window-padding-y=4
+working-directory=/home/bsadik/dev
+window-inherit-working-directory=true
+window-decoration=false
+font-feature=ligatures
+
+## Aliases
+alias ls="eza --icons=always --oneline"
+alias cat="bat"
+alias gs="git status"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gpsh="git push origin main"
+alias gpll="git pull origin main"
