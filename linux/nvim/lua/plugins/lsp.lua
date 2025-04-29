@@ -128,7 +128,6 @@ return {
 			emmet_language_server = {},
 			cssls = {},
 			ts_ls = {},
-			denols = {},
 			tailwindcss = {},
 			jsonls = {},
 			lemminx = {},
