@@ -36,37 +36,43 @@
     - `sudo pacman -S blender`
 - Godot
     - `sudo pacman -S godot`
-Discord
-Gapless
-Steam (enable 32bit library -> during installation or after)
-Krita
-Lutris
-Image Viewer (qView)
-Meld
-Remote Viewer 
-GIMP
-Meld
-Graphs
-Parabolic
-Thunderbird
-Zen Browser
-Eza
-Zed
-Okular
-Inkscape
-Aseprite
-qBittorrent
-Upscaler
-osu!lazer
-Ghostty
-Mission Center
-Timeshift
-Virtual Machine
-KeePassXC
-Kodi
-Audacity
-OBS Studio
-Qalculate!
+- Discord
+    - `sudo pacman -S discord`
+- Gapless
+    - `paru -S gapless`
+- Steam (enable 32bit library -> during installation or after)
+    - `sudo pacman -S steam`
+- Krita
+    - `sudo pacman -S krita`
+- Lutris
+    - `sudo pacman -S lutris`
+- Image Viewer (qView)
+    - `paru -S qview`
+- Meld
+    - `sudo pacman -S meld`
+- GIMP
+- Graphs
+- Parabolic
+- Thunderbird
+- Zen Browser
+- Eza
+- Zed
+- Okular
+- Inkscape
+- Aseprite
+- qBittorrent
+- Upscaler
+- osu!lazer
+- Ghostty
+- Timeshift
+- KeePassXC
+- Kodi
+- Audacity
+- OBS Studio
+- Qalculate!
+- Mission Center
+- Virtual Machine
+- Remote Viewer 
 
 ## Ghostty config
 
