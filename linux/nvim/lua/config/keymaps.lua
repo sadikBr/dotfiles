@@ -1,5 +1,8 @@
 -- NOTE: [[ Basic Keymaps ]]
 
+-- Remap the Escape action to jj
+vim.keymap.set('i', 'jj', '<Esc>')
+
 -- Vim diagnostics
 vim.keymap.set('n', 'gl', function()
   vim.diagnostic.open_float()
@@ -25,6 +28,10 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+
+-- Moving Visual selection
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- Harpoon keymaps
 local harpoon = require 'harpoon'

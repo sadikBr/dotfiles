@@ -20,6 +20,9 @@ return { -- Highlight, edit, and navigate code
       'xml',
       'markdown',
       'markdown_inline',
+      'gdscript',
+      'godot_resource',
+      'gdshader',
     },
     -- Autoinstall languages that are not installed
     auto_install = true,
