@@ -9,3 +9,9 @@
 require 'config.lazy'
 require 'config.options'
 require 'config.keymaps'
+
+-- Specific to godot
+if vim.fn.filereadable(vim.fn.getcwd() .. '/project.godot') == 1 then
+  local addr = './godothost'
+  vim.fn.serverstart(addr)
+end

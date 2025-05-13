@@ -156,5 +156,7 @@ return {
         end,
       },
     }
+
+    require('lspconfig').gdscript.setup(capabilities)
   end,
 }
