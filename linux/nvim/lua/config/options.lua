@@ -1,57 +1,66 @@
-vim.opt.expandtab = true -- Convert tabs to spaces
-vim.opt.shiftwidth = 2 -- Amout to indent when using << and >>
-vim.opt.tabstop = 2 -- How many spaces are shown per tab
-vim.opt.softtabstop = 2 -- How many spaces are applied when pressing tab
+-- NOTE: [[ Setting options ]]
+
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
 
 vim.opt.smarttab = true
 vim.opt.smartindent = true
-vim.opt.autoindent = true -- keep indentation from previous line
+vim.opt.autoindent = true
 
--- Always show relative line numbers
-vim.opt.number = true
-vim.opt.relativenumber = true
+-- Make line numbers default
+vim.o.number = true
+vim.o.relativenumber = true
 
--- Show line under cursor
-vim.opt.cursorline = true
+-- Enable mouse mode, can be useful for resizing splits for example!
+vim.o.mouse = 'a'
 
--- Store undos between sessions
-vim.opt.undofile = true
+-- Don't show the mode, since it's already in the status line
+vim.o.showmode = false
 
--- Enable mouse mode
-vim.opt.mouse = 'a'
-
--- Don't show the mode since it is already in the status line
-vim.opt.showmode = false
+-- Sync clipboard between OS and Neovim.
+vim.schedule(function()
+  vim.o.clipboard = 'unnamedplus'
+end)
 
 -- Enable break indent
-vim.opt.breakindent = true
+vim.o.breakindent = true
 
--- Case insensitive searching
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+-- Save undo history
+vim.o.undofile = true
+
+-- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
 -- Keep signcolumn on by default
-vim.opt.signcolumn = 'yes'
+vim.o.signcolumn = 'yes'
 
 -- Decrease update time
-vim.opt.updatetime = 250
+vim.o.updatetime = 250
 
--- Configure how new splits should open
-vim.opt.splitright = true
-vim.opt.splitbelow = true
+-- Decrease mapped sequence wait time
+vim.o.timeoutlen = 300
 
--- Minimum number of lines to display above and below the cursor
+-- Configure how new splits should be opened
+vim.o.splitright = true
+vim.o.splitbelow = true
+
+-- Sets how neovim will display certain whitespace characters in the editor.
+vim.o.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Preview substitutions live, as you type!
+vim.o.inccommand = 'split'
+
+-- Show which line your cursor is on
+vim.o.cursorline = true
+
+-- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
-
--- Disable command line until it is needed
 vim.opt.cmdheight = 0
 
--- Highlight text for some time after yanking
-vim.api.nvim_create_autocmd('TextYankPost', {
-  group = vim.api.nvim_create_augroup('YankHighlight', { clear = true }),
-  pattern = '*',
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  desc = 'Highlight Yank'
-})
+-- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
+-- instead raise a dialog asking if you wish to save the current file(s)
+vim.o.confirm = true
