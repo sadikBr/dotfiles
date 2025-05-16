@@ -51,18 +51,25 @@
 - Meld
     - `sudo pacman -S meld`
 - GIMP
+    - `sudo pacman -S gimp`
 - Graphs
+    - `sudo pacman -S graphs`
 - Parabolic
+    - `paru -S parabolic`
 - Thunderbird
+    - `sudo pacman -S thunderbird`
 - Zen Browser
+    - `paru -S zen-browser-bin`
 - Eza
+    - `sudo pacman -S eza`
 - Zed
+    - `paru -S zed-bin`
 - Okular
+    - `sudo pacman -S okular`
 - Inkscape
 - Aseprite
 - qBittorrent
 - Upscaler
-- osu!lazer
 - Ghostty
 - Timeshift
 - KeePassXC
@@ -73,6 +80,7 @@
 - Mission Center
 - Virtual Machine
 - Remote Viewer 
+- osu!lazer
 
 ## Ghostty config
 
