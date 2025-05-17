@@ -25,7 +25,7 @@ return { -- Highlight, edit, and navigate code
         'godot_resource',
         'gdshader',
       },
-      -- Autoinstall languages that are not installed
+      ignore_install = { 'org' },
       auto_install = true,
       sync_install = false,
       highlight = {

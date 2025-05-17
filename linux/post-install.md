@@ -30,42 +30,24 @@
 
 ## For every distro install the apps below using your package manager. (For me: pacman)
 
-- Neovim
-    - `sudo pacman -S neovim`
+- Neovim/Neovide
 - Blender
-    - `sudo pacman -S blender`
 - Godot
-    - `sudo pacman -S godot`
 - Discord
-    - `sudo pacman -S discord`
 - Gapless
-    - `paru -S gapless`
 - Steam (enable 32bit library -> during installation or after)
-    - `sudo pacman -S steam`
 - Krita
-    - `sudo pacman -S krita`
 - Lutris
-    - `sudo pacman -S lutris`
 - Image Viewer (qView)
-    - `paru -S qview`
 - Meld
-    - `sudo pacman -S meld`
 - GIMP
-    - `sudo pacman -S gimp`
 - Graphs
-    - `sudo pacman -S graphs`
 - Parabolic
-    - `paru -S parabolic`
 - Thunderbird
-    - `sudo pacman -S thunderbird`
 - Zen Browser
-    - `paru -S zen-browser-bin`
 - Eza
-    - `sudo pacman -S eza`
 - Zed
-    - `paru -S zed-bin`
 - Okular
-    - `sudo pacman -S okular`
 - Inkscape
 - Aseprite
 - qBittorrent
@@ -77,6 +59,11 @@
 - Audacity
 - OBS Studio
 - Qalculate!
+- Altus (Whatsapp Client)
+- Muezzin
+- BreakTimer
+- Telegram
+- Zoom
 - Mission Center
 - Virtual Machine
 - Remote Viewer 
@@ -89,11 +76,8 @@ theme=tokyonight_moon
 font-family=JetBrainsMono Nerd Font
 background-opacity=0.9
 font-size=14
-window-padding-x=4
-window-padding-y=4
 working-directory=/home/bsadik/dev
 window-inherit-working-directory=true
-window-decoration=false
 font-feature=ligatures
 ```
 
@@ -101,10 +85,12 @@ font-feature=ligatures
 
 ```bash
 alias ls="eza --icons=always --oneline"
+alias tree="eza --icons=always --color=always --tree --level=2"
 alias cat="bat"
 alias gs="git status"
 alias ga="git add ."
 alias gc="git commit -m"
 alias gpsh="git push origin main"
 alias gpll="git pull origin main"
+alias zed="/home/bsadik/.local/zed.app/bin/zed"
 ```
