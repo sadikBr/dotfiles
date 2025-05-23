@@ -128,7 +128,7 @@ return {
       tailwindcss = {},
       jsonls = {},
       lemminx = {},
-      volar = {},
+      vue_ls = {},
       pyright = {},
       marksman = {},
       jdtls = {},
